@@ -1,0 +1,26 @@
+<view class="page-body {{!openflag?'hiddenView':''}}">
+  <view class="page-section">
+
+  
+
+    <view class="rich-text-wrp my_flex">
+              <text class='run'>开始时间:</text>
+              <text class='my_flexR ' bindtap='tap'>{{value}} </text>
+              <image class='my_flexImg' src="../../images/icon_Right.png" style="width:32rpx;height:32rpx;"></image>
+    </view>
+      
+  </view>
+
+</view>
+
+ <!-- 引用DateTimePicker -->
+<view hidden='{{openflag}}'>
+    <DateTimePicker id="DateTimePicker" openflag="{{openflag}}" bind:cancelBtn="cancelBtn" bind:confirmBtm="confirmBtm" timevalue="{{value}}" tag="test">
+    </DateTimePicker>
+</view>
+
+
+
+
+
+
